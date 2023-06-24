@@ -1,0 +1,1025 @@
+
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,400i,500,600,700&amp;display=swap');
+
+
+:root {
+    --main-color:#2f2721;
+    --primary-color:#d3ad7f;
+    --black:#13131a;
+    --border:.1rem solid rgba(255,255,255,.3);
+
+}
+
+*{
+font-family: 'Poppins' sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+transition: .2s linear;
+}
+
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:.8rem;
+
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:var(--primary-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .1rem 2rem;
+    font-size: 1.8rem;
+    border:0.1rem solid var(--primary-color);
+    background: var(--primary-color);
+color:#fff;
+cursor: pointer;
+text-transform: capitalize;
+}
+
+.btn:hover{
+    background:#fff6eb;
+    color: var(--primary-color);
+}
+
+/* header*/
+
+.header{
+position:sticky;
+top: 0;
+left: 0; right: 0;
+background: var(--main-color);
+padding:2rem 10%;
+display:flex;
+align-items:center;
+}
+   
+   
+
+
+    .header .logo{
+        margin-right:auto;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .header .logo i{
+        color: #fff;
+    }
+
+.header .navbar{
+    position:relative;
+}
+
+.header .navbar.active{
+    right: 0;
+}
+
+.header .navbar #close-navbar{
+    position: absolute;
+    top: 1.5rem; right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+    display:none;
+
+}
+
+
+
+.header .navbar a{
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+
+    color:var(--primary-color);
+}
+
+
+
+.header .icons div{
+margin-left: 1.5rem;
+cursor: pointer;
+color:#fff;
+font-size: 2.5rem;
+
+}
+
+.header .icons div:hover{
+    color:var(--primary-color);
+}
+
+
+
+.header #menu-btn{
+    display: none;
+    
+}
+
+
+
+
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--main-color);
+    box-shadow: 0 0.5rem 1rem rgba(0 0 0 0.1);
+}
+
+
+.menu .box-container .box img{
+    height:13rem;
+}
+
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding:1rem 0;
+
+}
+
+
+.menu .box-container .box .price{
+    color-scheme: #fff;
+    font-size: 2.5rem;
+    padding:.5rem 0;
+}
+
+
+.menu .box-container .box:hover{
+    background-color: var(--primary-color);
+}
+
+
+
+.menu .box-container .box:hover > *{
+    color: var(--black);
+} 
+
+
+
+button{
+    width:20px;
+    height:20px;
+    font-size: 1rem;
+    min-height: 30px;border-radius: 10px;
+    outline:none;
+    border:none;
+    color:#fff;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: inset -2px -2px 2px rgba(255,255,255,.2),
+                 inset 2px 5px 15px rgba(250,255,0,.5);
+}
+
+
+
+button:active{
+    color:#fff;
+}
+
+
+input{
+
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    width:50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+    margin:0 5px;
+
+    background: transparent;
+}
+
+
+
+
+
+.footer{
+    background: var(--main-color);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:2rem;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+.footer .box-container .box img{
+        height:5rem;
+        background-color: #fff;
+}
+
+
+.footer .box-container .box h3{
+font-size: 2rem;
+color: #fff;
+padding:1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color:#ccc;
+    padding: .5rem 0;
+}
+
+
+.footer .box-container  .box .link{
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--primary-color);
+    padding: .5rem 0;
+    display: block;
+}
+
+.footer .box-container  .box .link:hover{
+    color:#ffaa42;
+    text-decoration: underline;
+}
+
+
+.footer .credit{
+    color:#fff;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+text-transform: capitalize;
+border-top: 0.1rem solid var(--primary-color);
+
+}
+
+
+.footer .credit span{
+    color:var(--primary-color);
+}
+
+
+
+
+
+
+@media(max-width:991px)
+{
+   html{
+    font-size: 55%;
+
+   }
+   .header{
+    padding: 2rem 5%;
+   }
+
+section{
+    padding:2rem;
+}
+
+}
+
+
+@media(max-width:768px)
+{
+    .header #menu-btn{
+        display: inline-block;
+    }
+
+.header .navbar{
+    position: fixed;
+    top:0; right:-105%;
+    width:30rem;
+    background: #fff;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+z-index: 1200;
+
+}
+
+.header .navbar #close-navbar{
+    display: block;
+}
+
+.header .navbar.active{
+    box-shadow:0 0 0 100vw rgba(0,0,0,0.8);
+    right:0
+}
+
+}
+
+
+
+
+
+
+</style>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-coffee">  Irani cafe</i>
+           
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">Home</a>
+            <a href="html/about.html">About</a>
+            <a href="html/menu.html">Menu</a>
+            <a href="review1.html">Review</a>
+            <a href="html/contact.html">Contact Us</a>
+          
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+
+
+
+<section class="menu" id="menu">
+
+    <h1 class="heading" style="color:var(--main-color);">Menu</h1>
+
+    <div class="box-container">
+
+        
+        <div class="box">
+            <img src="Images/cup-coffee-1.jpg">
+            <h3>Classic Coffee</h3>
+            <div class="price">$20</div>
+            <button id="sub">-</button>
+        <input type="text" id="qtyBox" readonly="" value="0">
+        <button id="add">+</button> <br> <br>
+            <a href="html/order1.html" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/order1.jgp.jpg">
+            <h3>Irani Special Coffee</h3>
+            <div class="price">$31</div>
+            <button id="sub1">-</button>
+        <input type="text" id="qtyBox1" readonly="" value="0">
+        <button id="add1">+</button> <br> <br>
+            <a href="html/order2.html" class="btn">Order Now</a>
+        </div>
+
+
+        <div class="box">
+            <img src="Images/order3.jpg">
+            <h3>Espresso</h3>
+            <div class="price">$28</div>
+            <button id="sub2">-</button>
+            <input type="text" id="qtyBox2" readonly="" value="0">
+            <button id="add2">+</button> <br> <br>
+            <a href="html/order3.html" class="btn">Order Now</a>
+        </div>
+
+
+        <div class="box">
+            <img
+                src="Images/order4.jpg">
+            <h3>Latte</h3>
+            <div class="price">$30</div>
+            <button id="sub3">-</button>
+            <input type="text" id="qtyBox3" readonly="" value="0">
+            <button id="add3">+</button> <br> <br>
+            <a href="html/order4.html" class="btn">Order Now</a>
+        </div>
+
+
+        <div class="box">
+            <img src="Images/order5.jpg">
+            <h3>Americano</h3>
+            <div class="price">$41</div>
+            <button id="sub4">-</button>
+            <input type="text" id="qtyBox4" readonly="" value="0">
+            <button id="add4">+</button> <br> <br>
+            <a href="html/order5.html" class="btn">Order Now</a>
+        </div>
+        
+        <div class="box">
+            <img src="Images/order6.jpg">
+            <h3>Flat White</h3>
+            <div class="price">$34</div>
+            <button id="sub5">-</button>
+            <input type="text" id="qtyBox5" readonly="" value="0">
+            <button id="add5">+</button> <br> <br>
+            <a href="html/order6.html" class="btn">Order Now</a>
+        </div>
+
+
+
+        <div class="box">
+            <img src="Images/order7.jpg">
+            <h3>Caffe mocha</h3>
+            <div class="price">$26</div>
+            <button id="sub6">-</button>
+            <input type="text" id="qtyBox6" readonly="" value="0">
+            <button id="add6">+</button> <br> <br>
+            <a href="html/order7.html" class="btn">Order Now</a>
+        </div>
+
+        
+        <div class="box">
+            <img src="Images/order8.jpg">
+            <h3>Cappuccino</h3>
+            <div class="price">$35</div>
+            <button id="sub7">-</button>
+            <input type="text" id="qtyBox7" readonly="" value="0">
+            <button id="add7">+</button> <br> <br>
+            <a href="html/order8.html" class="btn">Order Now</a>
+        </div>
+
+        
+        <div class="box">
+            <img src="Images/order9.jpg">
+            <h3>Cold Brew</h3>
+            <div class="price">$50</div>
+            <button id="sub8">-</button>
+            <input type="text" id="qtyBox8" readonly="" value="0">
+            <button id="add8">+</button> <br> <br>
+            <a href="html/order9.html" class="btn">Order Now</a>
+        </div>
+
+        
+        <div class="box">
+            <img src="Images/order10.jpg">
+            <h3>Iced Caramel Coffee</h3>
+            <div class="price">$29</div>
+            <button id="sub9">-</button>
+            <input type="text" id="qtyBox9" readonly="" value="0">
+            <button id="add9">+</button> <br> <br>
+            <a href="html/order10.html" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/order11.jpg">
+            <h3>Iced Espresso</h3>
+            <div class="price">$40</div>
+            <button id="sub10">-</button>
+            <input type="text" id="qtyBox10" readonly="" value="0">
+            <button id="add10">+</button> <br> <br>
+            <a href="html/order11.html" class="btn">Order Now</a>
+        </div>
+
+        
+        <div class="box">
+            <img src="Images/order12.jpg">
+            <h3>Mocha Smoothie</h3>
+            <div class="price">$51</div>
+            <button id="sub11">-</button>
+            <input type="text" id="qtyBox11" readonly="" value="0">
+            <button id="add11">+</button> <br> <br>
+            <a href="html/order12.html" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/order13.jpg">
+            <h3>Iced Americano</h3>
+            <div class="price">$33</div>
+            <button id="sub12">-</button>
+            <input type="text" id="qtyBox12" readonly="" value="0">
+            <button id="add12">+</button> <br> <br>
+            <a href="html/order13.html" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/order14.jpg">
+            <h3>Cappuccino Iced Coffee</h3>
+            <div class="price">$45</div>
+            <button id="sub13">-</button>
+            <input type="text" id="qtyBox13" readonly="" value="0">
+            <button id="add13">+</button> <br> <br>
+            <a href="html/order14.html" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/order15.jpg">        
+            <h3>Vanila Iced Coffee</h3>
+            <div class="price">$27</div>
+            <button id="sub14">-</button>
+            <input type="text" id="qtyBox14" readonly="" value="0">
+            <button id="add14">+</button> <br> <br>
+            <a href="html/order15.html" class="btn">Order Now</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/order16.jpg">
+            <h3>Iced Mocha</h3>
+            <div class="price">$35</div>
+            <button id="sub15">-</button>
+            <input type="text" id="qtyBox15" readonly="" value="0">
+            <button id="add15">+</button> <br> <br>
+            <a href="html/order16.html" class="btn">Order Now</a>
+        </div>
+
+    </div>
+
+        
+
+    </div>
+</section>
+<!--menu section end-->
+
+
+
+<!--review section started-->
+
+<!--footer section started-->
+<section class="footer">
+
+    <div class="box-container">
+
+    <div class="box">
+        <img src="Images/address.jpg">
+        <h3>Address</h3>
+        <p>IRANI CAFE, AJ Tower, Main Road, before Dahanukar Colony cicle, Kothrud, Pune, Maharashtra 411029 </p>
+    </div>
+
+    <div class="box">
+        <img src="Images/envelop.jpg">
+        <h3>Email</h3>
+        <a href="#" class="link">iranicafe@gmail.com</a>
+      
+
+    </div>
+
+
+
+    <div class="box">
+        <img src="Images/call us.jpg">
+        <h3>Call US</h3>
+        <p>+91 98765 43210</p>
+    </div>
+
+
+
+    <div class="box">
+        <img src="Images/clock.jpg">
+        <h3>Opening Hours</h3>
+        <p>Monday-Friday: 8:00 - 24:00
+        <br>Saturday: 8:00 - 23:00</p>
+    </div>
+    </div>
+    <div class="credit">  © Copyright 2023 <span> Powered By Irani Cafe!</span> All rights are reserved</div> 
+    <p>Developed By Ms. Laxmi</p>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+ 
+        
+ let addBtn = document.querySelector('#add');
+    let subBtn = document.querySelector('#sub');
+    let qty = document.querySelector('#qtyBox');
+    
+    addBtn.addEventListener('click',() =>{
+        qty.value = parseInt(qty.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn.addEventListener('click',() =>{
+      if (qty.value <= 0 ){
+        qty.value = 0;
+      }
+    else{
+        qty.value = parseInt(qty.value) - 1;
+    }
+    
+    });
+
+
+    
+    let addBtn1 = document.querySelector('#add1');
+    let subBtn1 = document.querySelector('#sub1');
+    let qty1 = document.querySelector('#qtyBox1');
+    
+    addBtn1.addEventListener('click',() =>{
+        qty1.value = parseInt(qty1.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn1.addEventListener('click',() =>{
+      if (qty1.value <= 0 ){
+        qty1.value = 0;
+      }
+    else{
+        qty1.value = parseInt(qty1.value) - 1;
+    }
+    
+    });
+        
+       
+    let addBtn2 = document.querySelector('#add2');
+    let subBtn2 = document.querySelector('#sub2');
+    let qty2 = document.querySelector('#qtyBox2');
+    
+    addBtn2.addEventListener('click',() =>{
+        qty2.value = parseInt(qty2.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn2.addEventListener('click',() =>{
+      if (qty2.value <= 0 ){
+        qty2.value = 0;
+      }
+    else{
+        qty2.value = parseInt(qty2.value) - 1;
+    }
+    
+    });
+
+       
+    let addBtn3 = document.querySelector('#add3');
+    let subBtn3 = document.querySelector('#sub3');
+    let qty3 = document.querySelector('#qtyBox3');
+    
+    addBtn3.addEventListener('click',() =>{
+        qty3.value = parseInt(qty3.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn3.addEventListener('click',() =>{
+      if (qty3.value <= 0 ){
+        qty3.value = 0;
+      }
+    else{
+        qty3.value = parseInt(qty3.value) - 1;
+    }
+    
+    });
+
+
+       
+    let addBtn4 = document.querySelector('#add4');
+    let subBtn4 = document.querySelector('#sub4');
+    let qty4 = document.querySelector('#qtyBox4');
+    
+    addBtn4.addEventListener('click',() =>{
+        qty4.value = parseInt(qty4.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn4.addEventListener('click',() =>{
+      if (qty4.value <= 0 ){
+        qty4.value = 0;
+      }
+    else{
+        qty4.value = parseInt(qty4.value) - 1;
+    }
+    
+    });
+
+
+       
+    let addBtn5 = document.querySelector('#add5');
+    let subBtn5 = document.querySelector('#sub5');
+    let qty5 = document.querySelector('#qtyBox5');
+    
+    addBtn5.addEventListener('click',() =>{
+        qty5.value = parseInt(qty5.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn5.addEventListener('click',() =>{
+      if (qty5.value <= 0 ){
+        qty5.value = 0;
+      }
+    else{
+        qty5.value = parseInt(qty5.value) - 1;
+    }
+    
+    });
+
+
+
+
+       
+    let addBtn6 = document.querySelector('#add6');
+    let subBtn6 = document.querySelector('#sub6');
+    let qty6 = document.querySelector('#qtyBox6');
+    
+    addBtn6.addEventListener('click',() =>{
+        qty6.value = parseInt(qty6.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn6.addEventListener('click',() =>{
+      if (qty6.value <= 0 ){
+        qty6.value = 0;
+      }
+    else{
+        qty6.value = parseInt(qty6.value) - 1;
+    }
+    
+    });
+
+
+
+
+       
+    let addBtn7 = document.querySelector('#add7');
+    let subBtn7 = document.querySelector('#sub7');
+    let qty7 = document.querySelector('#qtyBox7');
+    
+    addBtn7.addEventListener('click',() =>{
+        qty7.value = parseInt(qty7.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn7.addEventListener('click',() =>{
+      if (qty7.value <= 0 ){
+        qty7.value = 0;
+      }
+    else{
+        qty7.value = parseInt(qty7.value) - 1;
+    }
+    
+    });
+
+
+
+
+       
+    let addBtn8 = document.querySelector('#add8');
+    let subBtn8 = document.querySelector('#sub8');
+    let qty8 = document.querySelector('#qtyBox8');
+    
+    addBtn8.addEventListener('click',() =>{
+        qty8.value = parseInt(qty8.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn8.addEventListener('click',() =>{
+      if (qty8.value <= 0 ){
+        qty8.value = 0;
+      }
+    else{
+        qty8.value = parseInt(qty8.value) - 1;
+    }
+    
+    });
+
+
+
+       
+    let addBtn9 = document.querySelector('#add9');
+    let subBtn9 = document.querySelector('#sub9');
+    let qty9 = document.querySelector('#qtyBox9');
+    
+    addBtn9.addEventListener('click',() =>{
+        qty9.value = parseInt(qty9.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn9.addEventListener('click',() =>{
+      if (qty9.value <= 0 ){
+        qty9.value = 0;
+      }
+    else{
+        qty9.value = parseInt(qty9.value) - 1;
+    }
+    
+    });
+
+
+       
+    let addBtn10 = document.querySelector('#add10');
+    let subBtn10 = document.querySelector('#sub10');
+    let qty10 = document.querySelector('#qtyBox10');
+    
+    addBtn10.addEventListener('click',() =>{
+        qty10.value = parseInt(qty10.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn10.addEventListener('click',() =>{
+      if (qty10.value <= 0 ){
+        qty10.value = 0;
+      }
+    else{
+        qty10.value = parseInt(qty10.value) - 1;
+    }
+    
+    });
+
+
+       
+    let addBtn11 = document.querySelector('#add11');
+    let subBtn11 = document.querySelector('#sub11');
+    let qty11 = document.querySelector('#qtyBox11');
+    
+    addBtn11.addEventListener('click',() =>{
+        qty11.value = parseInt(qty11.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn11.addEventListener('click',() =>{
+      if (qty11.value <= 0 ){
+        qty11.value = 0;
+      }
+    else{
+        qty11.value = parseInt(qty11.value) - 1;
+    }
+    
+    });
+
+
+       
+    let addBtn12 = document.querySelector('#add12');
+    let subBtn12 = document.querySelector('#sub12');
+    let qty12 = document.querySelector('#qtyBox12');
+    
+    addBtn12.addEventListener('click',() =>{
+        qty12.value = parseInt(qty12.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn12.addEventListener('click',() =>{
+      if (qty12.value <= 0 ){
+        qty12.value = 0;
+      }
+    else{
+        qty12.value = parseInt(qty12.value) - 1;
+    }
+    
+    });
+
+
+
+       
+    let addBtn13 = document.querySelector('#add13');
+    let subBtn13 = document.querySelector('#sub13');
+    let qty13 = document.querySelector('#qtyBox13');
+    
+    addBtn13.addEventListener('click',() =>{
+        qty13.value = parseInt(qty13.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn13.addEventListener('click',() =>{
+      if (qty13.value <= 0 ){
+        qty13.value = 0;
+      }
+    else{
+        qty13.value = parseInt(qty13.value) - 1;
+    }
+    
+    });
+
+
+
+
+       
+    let addBtn14 = document.querySelector('#add14');
+    let subBtn14 = document.querySelector('#sub14');
+    let qty14 = document.querySelector('#qtyBox14');
+    
+    addBtn14.addEventListener('click',() =>{
+        qty14.value = parseInt(qty14.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn14.addEventListener('click',() =>{
+      if (qty14.value <= 0 ){
+        qty14.value = 0;
+      }
+    else{
+        qty14.value = parseInt(qty14.value) - 1;
+    }
+    
+    });
+
+
+
+
+
+       
+    let addBtn15 = document.querySelector('#add15');
+    let subBtn15 = document.querySelector('#sub15');
+    let qty15 = document.querySelector('#qtyBox15');
+    
+    addBtn15.addEventListener('click',() =>{
+        qty15.value = parseInt(qty15.value) + 1;
+    });
+    
+    
+    
+    
+    subBtn15.addEventListener('click',() =>{
+      if (qty15.value <= 0 ){
+        qty15.value = 0;
+      }
+    else{
+        qty15.value = parseInt(qty15.value) - 1;
+    }
+    
+    });
+        
+
+
+
+
+
+
+
+</script>
+</body>
+
+</html>

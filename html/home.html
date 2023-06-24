@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irani Cafe Website</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,400i,500,600,700&amp;display=swap');
+
+
+:root {
+    --main-color:#2f2721;
+    --primary-color:#d3ad7f;
+    --black:#13131a;
+    --border:.1rem solid rgba(255,255,255,.3);
+
+}
+
+*{
+font-family: 'Poppins' sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+transition: .2s linear;
+}
+
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:.8rem;
+
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:var(--primary-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .1rem 2rem;
+    font-size: 1.8rem;
+    border:0.1rem solid var(--primary-color);
+    background: var(--primary-color);
+color:#fff;
+cursor: pointer;
+text-transform: capitalize;
+}
+
+.btn:hover{
+    background:#fff6eb;
+    color: var(--primary-color);
+}
+
+/* header*/
+
+.header{
+position:sticky;
+top: 0;
+left: 0; right: 0;
+background: var(--main-color);
+padding:2rem 10%;
+display:flex;
+align-items:center;
+}
+   
+    .header .logo{
+        margin-right:auto;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .header .logo i{
+        color: #fff;
+    }
+
+.header .navbar{
+    position:relative;
+}
+
+.header .navbar #close-navbar{
+    position: absolute;
+    top: 1.5rem; right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+    display:none;
+
+}
+
+
+.header .navbar a{
+    margin-right: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+
+    color:var(--primary-color);
+}
+
+.header .icons div{
+margin-left: 1.5rem;
+cursor: pointer;
+color:#fff;
+font-size: 2.5rem;
+
+}
+
+.header .icons div:hover{
+    color:var(--primary-color);
+}
+
+.header #menu-btn{
+    display: none;
+    
+}
+
+/*home*/
+.home{
+
+min-height:100vh;
+display:flex;
+align-items:center;
+background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://as1.ftcdn.net/v2/jpg/01/43/05/74/1000_F_143057403_F3LRurEB8Lgk0hi8Ehpb7ZJOtaAZdIzj.jpg') no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+.home .content{
+    max-width:60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+
+
+.footer{
+    background: var(--main-color);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:2rem;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+.footer .box-container .box img{
+        height:5rem;
+        background-color: #fff;
+}
+
+
+.footer .box-container .box h3{
+font-size: 2rem;
+color: #fff;
+padding:1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color:#ccc;
+    padding: .5rem 0;
+}
+
+
+.footer .box-container  .box .link{
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--primary-color);
+    padding: .5rem 0;
+    display: block;
+}
+
+.footer .box-container  .box .link:hover{
+    color:#ffaa42;
+    text-decoration: underline;
+}
+
+
+.footer .credit{
+    color:#fff;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+text-transform: capitalize;
+border-top: 0.1rem solid var(--primary-color);
+
+}
+
+
+.footer .credit span{
+    color:var(--primary-color);
+}
+
+
+
+
+
+
+@media(max-width:991px)
+{
+   html{
+    font-size: 55%;
+
+   }
+   .header{
+    padding: 2rem 5%;
+   }
+
+section{
+    padding:2rem;
+}
+
+}
+
+
+@media(max-width:768px)
+{
+    .header #menu-btn{
+        display: inline-block;
+    }
+
+.header .navbar{
+    position: fixed;
+    top:0; right:-105%;
+    width:30rem;
+    background: #fff;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+z-index: 1200;
+
+}
+
+.header .navbar #close-navbar{
+    display: block;
+}
+
+.header .navbar.active{
+    box-shadow:0 0 0 100vw rgba(0,0,0,0.8);
+    right:0
+}
+
+}
+
+
+
+
+
+
+ </style> 
+</head>
+
+<body>
+    <!-- header section starts here-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-coffee">  Irani cafe</i>
+           
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">Home</a>
+            <a href="html/about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="html/review.html">Review</a>
+            <a href="html/contact.html">Contact Us</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+<!--header End-->
+
+    <section class="home" id="home">
+            <div class="content">
+            <h3>Discover the <br> taste of real coffee</h3>
+            <a href="html/menu.html" class="btn">Order Now</a>
+        </div>
+ </section>
+<!--home ended-->
+
+
+
+    <!--footer section started-->
+    <section class="footer">
+
+        <div class="box-container">
+
+        <div class="box">
+            <img src="Images/address.jpg">
+            <h3>Address</h3>
+            <p>IRANI CAFE, AJ Tower, Main Road, before Dahanukar Colony cicle, Kothrud, Pune, Maharashtra 411029 </p>
+        </div>
+
+        <div class="box">
+            <img src="Images/envelop.jpg">
+            <h3>Email</h3>
+            <a href="#" class="link">iranicafe@gmail.com</a>
+          
+
+        </div>
+
+
+
+        <div class="box">
+            <img src="Images/call us.jpg">
+            <h3>Call US</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+
+
+        <div class="box">
+            <img src="Images/clock.jpg">
+            <h3>Opening Hours</h3>
+            <p>Monday-Friday: 8:00 - 24:00
+            <br>Saturday: 8:00 - 23:00</p>
+        </div>
+        </div>
+        <div class="credit">  © Copyright 2023 <span> Powered By Irani Cafe!</span> All rights are reserved</div> 
+        <p>Developed By Ms. Laxmi</p>
+</section>
+</body>
+</html>

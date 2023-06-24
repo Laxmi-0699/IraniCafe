@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irani Cafe Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Custom css file link-->
+    <Link rel="stylesheet" href="css/style.css">
+
+
+ <!--font awesome cdn link-->
+  
+</head>
+
+<body>
+    <!-- header section starts here-->
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-coffee">  Irani cafe</i>
+        
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="home.html">Home</a>
+            <a href="html/about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="html/review.html">Review</a>
+            <a href="html/contact.html">Contact Us</a>
+          
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+<!--header End-->
+
+
+<!--home started-->
+
+    <section class="home" id="home">
+            <div class="content">
+            <h3>Discover the <br> taste of real coffee</h3>
+            <a href="menu.html" class="btn">Order Now</a>
+        </div>
+ </section>
+<!--home ended-->
+
+    <!--about us started-->
+<h1 class="heading" style="color:var(--main-color);">About us</h1>
+
+<section class="about" id="about">
+
+        <div class="row">
+                <div class="image">
+                <img src="Images/aboutus.jpg">
+            </div>
+
+            <div class="content">
+                <h3>What Makes Our Coffee Special?</h3>
+                <div class="line"></div>
+                <p>Irani Cafe was founded by the joy of cooking and serving, by two cousins, Mr. Reza and Mr. Kasem.
+                    As a child, Reza would always head to the bakery 'bhatti' and take great interest in the making of products, 
+                    and what went on behind the intricate Iranian designs of the walls. After completing his masters from New Castle 
+                    University, Kasem was keen to come back home and pursue his calling. Over the success of the first two cafes, 
+                    and an increasing demand, to which we are ever grateful and humbled by, we decided to widen our avenues 
+                    and expand our brand further. It was after this that Mr. Mokhtar and Mr. Amir joined the duo to begin 
+                    the Kalyani Nagar outlet, closely followed by the Magarpatta outlet. Mokhtar, a petroleum engineer by qualification was 
+                    full of energy and excitement to take his grandfathers' bygone era of the 'Irani Cafes in Poona' 
+                    tradition forward. Amir was keen to breakaway from his 9 to 5 IT job routine and embark on a new journey 
+                    which he recollects as a child sitting on the cash counter of his old Irani cafe in Bombay.
+                    Together, we represent one great big family, united by the love and warmth in our hearts for Irani Cafes 
+                    and everything they stand for.</p>
+            </div>
+  </div>
+</section>
+<!--about section end-->
+
+
+<!--menu section strated-->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading" style="color:var(--main-color);">Menu</h1>
+
+        <div class="box-container">
+
+            
+            <div class="box">
+                <img src="Images/cup-coffee-1.jpg">
+                <h3>Classic Coffee</h3>
+                <div class="price">$20</div>
+                <button id="sub">-</button>
+            <input type="text" id="qtyBox" readonly="" value="0">
+            <button id="add">+</button> <br> <br>
+                <a href="html/order1.html" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/order1.jgp.jpg">
+                <h3>Irani Special Coffee</h3>
+                <div class="price">$31</div>
+                <button id="sub1">-</button>
+            <input type="text" id="qtyBox1" readonly="" value="0">
+            <button id="add1">+</button> <br> <br>
+                <a href="html/order2.html" class="btn">Order Now</a>
+            </div>
+
+
+            <div class="box">
+                <img src="Images/order3.jpg">
+                <h3>Espresso</h3>
+                <div class="price">$28</div>
+                <button id="sub2">-</button>
+                <input type="text" id="qtyBox2" readonly="" value="0">
+                <button id="add2">+</button> <br> <br>
+                <a href="html/order3.html" class="btn">Order Now</a>
+            </div>
+
+
+            <div class="box">
+                <img
+                    src="Images/order4.jpg">
+                <h3>Latte</h3>
+                <div class="price">$30</div>
+                <button id="sub3">-</button>
+                <input type="text" id="qtyBox3" readonly="" value="0">
+                <button id="add3">+</button> <br> <br>
+                <a href="html/order4.html" class="btn">Order Now</a>
+            </div>
+
+
+            <div class="box">
+                <img src="Images/order5.jpg">
+                <h3>Americano</h3>
+                <div class="price">$41</div>
+                <button id="sub4">-</button>
+                <input type="text" id="qtyBox4" readonly="" value="0">
+                <button id="add4">+</button> <br> <br>
+                <a href="html/order5.html" class="btn">Order Now</a>
+            </div>
+            
+            <div class="box">
+                <img src="Images/order6.jpg">
+                <h3>Flat White</h3>
+                <div class="price">$34</div>
+                <button id="sub5">-</button>
+                <input type="text" id="qtyBox5" readonly="" value="0">
+                <button id="add5">+</button> <br> <br>
+                <a href="html/order6.html" class="btn">Order Now</a>
+            </div>
+
+
+
+            <div class="box">
+                <img src="Images/order7.jpg">
+                <h3>Caffe mocha</h3>
+                <div class="price">$26</div>
+                <button id="sub6">-</button>
+                <input type="text" id="qtyBox6" readonly="" value="0">
+                <button id="add6">+</button> <br> <br>
+                <a href="html/order7.html" class="btn">Order Now</a>
+            </div>
+
+            
+            <div class="box">
+                <img src="Images/order8.jpg">
+                <h3>Cappuccino</h3>
+                <div class="price">$35</div>
+                <button id="sub7">-</button>
+                <input type="text" id="qtyBox7" readonly="" value="0">
+                <button id="add7">+</button> <br> <br>
+                <a href="html/order8.html" class="btn">Order Now</a>
+            </div>
+
+            
+            <div class="box">
+                <img src="Images/order9.jpg">
+                <h3>Cold Brew</h3>
+                <div class="price">$50</div>
+                <button id="sub8">-</button>
+                <input type="text" id="qtyBox8" readonly="" value="0">
+                <button id="add8">+</button> <br> <br>
+                <a href="html/order9.html" class="btn">Order Now</a>
+            </div>
+
+            
+            <div class="box">
+                <img src="Images/order10.jpg">
+                <h3>Iced Caramel Coffee</h3>
+                <div class="price">$29</div>
+                <button id="sub9">-</button>
+                <input type="text" id="qtyBox9" readonly="" value="0">
+                <button id="add9">+</button> <br> <br>
+                <a href="html/order10.html" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/order11.jpg">
+                <h3>Iced Espresso</h3>
+                <div class="price">$40</div>
+                <button id="sub10">-</button>
+                <input type="text" id="qtyBox10" readonly="" value="0">
+                <button id="add10">+</button> <br> <br>
+                <a href="html/order11.html" class="btn">Order Now</a>
+            </div>
+
+            
+            <div class="box">
+                <img src="Images/order12.jpg">
+                <h3>Mocha Smoothie</h3>
+                <div class="price">$51</div>
+                <button id="sub11">-</button>
+                <input type="text" id="qtyBox11" readonly="" value="0">
+                <button id="add11">+</button> <br> <br>
+                <a href="html/order12.html" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/order13.jpg">
+                <h3>Iced Americano</h3>
+                <div class="price">$33</div>
+                <button id="sub12">-</button>
+                <input type="text" id="qtyBox12" readonly="" value="0">
+                <button id="add12">+</button> <br> <br>
+                <a href="html/order13.html" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/order14.jpg">
+                <h3>Cappuccino Iced Coffee</h3>
+                <div class="price">$45</div>
+                <button id="sub13">-</button>
+                <input type="text" id="qtyBox13" readonly="" value="0">
+                <button id="add13">+</button> <br> <br>
+                <a href="html/order14.html" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/order15.jpg">        ">
+                <h3>Vanila Iced Coffee</h3>
+                <div class="price">$27</div>
+                <button id="sub14">-</button>
+                <input type="text" id="qtyBox14" readonly="" value="0">
+                <button id="add14">+</button> <br> <br>
+                <a href="html/order15.html" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="Images/order16.jpg">
+                <h3>Iced Mocha</h3>
+                <div class="price">$35</div>
+                <button id="sub15">-</button>
+                <input type="text" id="qtyBox15" readonly="" value="0">
+                <button id="add15">+</button> <br> <br>
+                <a href="html/order16.html" class="btn">Order Now</a>
+            </div>
+
+        </div>
+
+            
+
+        </div>
+    </section>
+    <!--menu section end-->
+
+
+
+<!--review section started-->
+
+
+<section class="review" id="review">
+    <h1 class="heading" style="color:var(--main-color);">Customer's <span>Review</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/review_1.jpg"> 
+            <h3>john</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>Will go again.I only popped in to get take-away cappuccinos, 
+                but I was struck by how friendly the service was. 
+                The cappuccinos were wonderful too! And very well priced</p>
+        </div>
+
+        
+        <div class="box">
+            <img src="Images/review_2.jpg"> 
+            <h3>john</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>I would probably say that this coffee shop is a must for coffee lovers! The service was good, and the variety of coffee served 
+                in the ambiance was very satisfying. If you like your coffee shops, then this is a must-visit! We will be back again!</p>
+
+            </div>
+
+        
+        <div class="box">
+            <img src="Images/review_3.jpg"> 
+            <h3>john</h3>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>This coffee shop is my favorite place to hang and do my works. I really 
+                like this place because it has a good ambiance and not too crowded as well.
+                 The coffee and pastries that they had were so delicious.</p>
+
+         </div>
+    </div>
+</section>
+<!--review section end -->
+
+
+ <!--contact us section starts-->
+ <section class="contact" id="contact">
+
+    <h1 class="heading" style="color:var(--main-color);">Contcact Us</h1>
+
+    <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.699388299061!2d73.81089207506166!3d18.497270982591772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0ce94b265f%3A0xff8a953975176c0e!2sIrani%20Cafe%20-%20Kothrud!5e0!3m2!1sen!2sin!4v1685806802849!5m2!1sen!2sin" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+        <form onsubmit="fun()">
+            <h3>Get In Touch</h3>
+
+            <div class="inputBox">
+            <span class="fa fa-envelope"></span>
+            <input type="text" placeholder="name" id="frm1">
+    </div>
+
+    <div class="inputBox">
+    <span class="fa fa-user"></span>
+    <input type="text" placeholder="user">
+    </div>
+
+
+    <div class="inputBox">
+    <span class="fa fa-phone"></span>
+    <input type="text" placeholder="phone">
+
+    </div>
+    <div class="inputBox">
+        <span class="fa fa-box"></span>
+        <input type="text" name="message" placeholder="How We can Help you?" required>
+        </div>
+
+    <input type="submit" value="send message" class="btn">
+
+    </form>
+    </div>
+
+    </div>
+</section>
+<!--Contact section ended-->
+
+
+    <!--footer section started-->
+    <section class="footer">
+
+        <div class="box-container">
+
+        <div class="box">
+            <img src="Images/address.jpg">
+            <h3>Address</h3>
+            <p>IRANI CAFE, AJ Tower, Main Road, before Dahanukar Colony cicle, Kothrud, Pune, Maharashtra 411029 </p>
+        </div>
+
+        <div class="box">
+            <img src="Images/envelop.jpg">
+            <h3>Email</h3>
+            <a href="#" class="link">iranicafe@gmail.com</a>
+          
+
+        </div>
+
+
+
+        <div class="box">
+            <img src="Images/call us.jpg">
+            <h3>Call US</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+
+
+        <div class="box">
+            <img src="Images/clock.jpg">
+            <h3>Opening Hours</h3>
+            <p>Monday-Friday: 8:00 - 24:00
+            <br>Saturday: 8:00 - 23:00</p>
+        </div>
+        </div>
+        <div class="credit">  © Copyright 2023 <span> Powered By Irani Cafe!</span> All rights are reserved</div> 
+        <p style="color:#fff">Developed By Ms. Laxmi</p>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
